@@ -1,0 +1,13 @@
+flowchart TD
+  A[User Interaction<br/>(UI/xyflow)] -->|Create/Update Workflow| C[SQL Function<br/>(Supabase)]
+  B[Cronjob<br/>(Scheduled Task)] -->|Automated Stage Update| C
+
+  C -->|Task at Stage 1| D[Database]
+
+  subgraph Workflow
+    D --> E[Workflow Stage 1]
+    E -->|Transition| F[Workflow Stage 2]
+    F -->|Transition| G[Workflow Stage N]
+    G -->|Transition| H[Success Stage]
+    G -->|Loop/Branch| E
+  end
