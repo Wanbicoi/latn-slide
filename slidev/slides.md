@@ -1,13 +1,5 @@
 ---
-# Using the penguin theme
-theme: penguin
-# apply any unocss classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
+theme: default
 info: |
   ## LATN Slide Presentation
   
@@ -37,25 +29,26 @@ A comprehensive overview of the LATN project architecture, workflow, and impleme
 </div>
 
 ---
+title: Table of contents
+---
+# Table of contents
+
+---
 src: ./sections/01-intro.md
 ---
 
 ---
-src: ./sections/02-architecture.md
+src: ./sections/02-app-overview.md
 ---
 
 ---
-src: ./sections/03-workflow.md
+src: ./sections/03-core-features.md
 ---
 
 ---
-src: ./sections/04-nginx-auth.md
+src: ./sections/04-results.md
 ---
 
 ---
-src: ./sections/05-report.md
----
-
----
-src: ./sections/06-conclusion.md
+src: ./sections/05-qa.md
 ---
